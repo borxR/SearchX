@@ -21,7 +21,7 @@ def cloneNode(update, context):
         sendMessage(result, context.bot, update)
         sendMessage("Pwoli, Sanam Clone Ayitunde")
     else:
-        sendMessage("Enthuvade myrathaykk ulla link ayak,smh", context.bot, update)
+        sendMessage("Enthuvade mariyathaykk ulla link ayak,smh", context.bot, update)
         
         LOGGER.info("Cloning: None")
 
