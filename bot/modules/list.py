@@ -20,7 +20,7 @@ def list_drive(update, context):
     try:
         msg, button = google_drive.drive_list(search)
     except Exception as e:
-        msg, button = "There was an error", None
+        msg, button = "Theynj,error vannu", None
         LOGGER.exception(e)
     editMessage(msg, reply, button)
 
