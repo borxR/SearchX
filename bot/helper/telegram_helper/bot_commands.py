@@ -9,7 +9,7 @@ class _BotCommands:
         self.ShellCommand = 'shell'
         self.LogCommand = 'log'
         self.HelpCommand = 'help'
-        self.testCommand = 'test'
+        self.TestCommand = 'test'
         
 
 BotCommands = _BotCommands()
