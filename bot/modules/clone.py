@@ -14,12 +14,13 @@ def cloneNode(update, context):
     if len(args) > 1:
         link = args[1]
         msg = sendMessage(f"<b>Cloning:</b> <code>{link}</code>", context.bot, update)
+        updt= "Pwoli, Sanam Clone Ayitunde"
         LOGGER.info(f"Cloning: {link}")
         gd = GoogleDriveHelper()
         result = gd.clone(link)
         deleteMessage(context.bot, msg)
-        sendMessage(result, context.bot, update)
-        sendMessage("Pwoli, Sanam Clone Ayitunde")
+        sendMessage(result, context.bot, update ,updt)
+        
     else:
         sendMessage("Enthuvade mariyathaykk ulla link ayak,smh", context.bot, update)
         
