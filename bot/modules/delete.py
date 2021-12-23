@@ -20,7 +20,7 @@ def deleteNode(update, context):
         deleteMessage(context.bot, msg)
         sendMessage(result, context.bot, update)
     else:
-        sendMessage("Send a drive link along with command", context.bot, update)
+        sendMessage("Evidede GDrive link?,nere olla link ayak", context.bot, update)
         LOGGER.info("Deleting: None")
 
 delete_handler = CommandHandler(BotCommands.DeleteCommand, deleteNode,
