@@ -19,8 +19,10 @@ def cloneNode(update, context):
         result = gd.clone(link)
         deleteMessage(context.bot, msg)
         sendMessage(result, context.bot, update)
+        sendMessage("Pwoli, Sanam Clone Ayitunde")
     else:
-        sendMessage("Send a drive link along with command", context.bot, update)
+        sendMessage("Enthuvade myrathaykk ulla link ayak,smh", context.bot, update)
+        
         LOGGER.info("Cloning: None")
 
 clone_handler = CommandHandler(BotCommands.CloneCommand, cloneNode,
