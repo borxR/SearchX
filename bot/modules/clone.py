@@ -21,7 +21,7 @@ def cloneNode(update, context):
         gd = GoogleDriveHelper()
         result = gd.clone(link)
         deleteMessage(context.bot, msg)
-        sendMessage(context.bot, updt)
+        sendMessage(updt, context.bot, update)
         sendMessage(result, context.bot, update)
         
     else:
